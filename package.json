@@ -2,7 +2,12 @@
   "name": "playwright",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:debug-logs": "DEBUG=* DEBUG_FILE:logs.txt npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:show-repoer": "npx playwright show report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

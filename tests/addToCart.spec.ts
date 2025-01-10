@@ -20,6 +20,7 @@ test("test", async ({ page }) => {
     .getByRole("navigation")
     .getByRole("link", { name: "Our Story" })
     .click();
+  await page.pause();
   await page
     .getByRole("navigation")
     .getByRole("link", { name: "Our Story" })
